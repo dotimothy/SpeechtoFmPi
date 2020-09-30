@@ -15,7 +15,7 @@ import wave
 
 
 def main():
-	txt = input("\nType what the text, it will be speech: ")
+	txt = raw_input("\nType what the text, it will be speech: ")
 	gt = gTTS(txt)
 	gt.save("output.wav")
 	print("Output has been compiled to output.wav.")
