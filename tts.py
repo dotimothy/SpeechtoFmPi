@@ -3,6 +3,8 @@ import wave
 import os 
 
 def main():
+	print("****Installing Libraries/Dependencies****\n")
+	os.system("pip install gtts")
 	txt = input("Type what the text, it will be speech: ")
 	gt = gTTS(text=txt, lang='en', slow=False)
 	gt.save("output.wav")
