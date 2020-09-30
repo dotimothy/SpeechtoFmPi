@@ -1,7 +1,8 @@
 #Author Timothy Do
 
 print("****Installing Libraries/Dependencies****\n")
-os.system("pip install gtts")
+os.system("sudo pip install gtts")
+os.system("sudo make")
 
 from gtts import gTTS
 import wave
