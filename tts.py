@@ -6,6 +6,7 @@ import os
 import os
 print("****Installing Libraries/Dependencies****\n")
 os.system("sudo pip install gtts")
+print()
 os.system("sudo make")
 print("\n****Finish Installing Dependencies****\n")
 
@@ -14,7 +15,7 @@ import wave
 
 
 def main():
-	txt = input("Type what the text, it will be speech: ")
+	txt = input("\nType what the text, it will be speech: ")
 	gt = gTTS(text=txt, lang='en', slow=False)
 	gt.save("output.wav")
 	print("Output has been compiled to output.wav.")
