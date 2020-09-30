@@ -1,7 +1,8 @@
 #Author Timothy Do
 
 import os 
-
+#Author Timothy Do
+import os
 print("****Installing Libraries/Dependencies****\n")
 os.system("sudo pip install gtts")
 os.system("sudo make")
