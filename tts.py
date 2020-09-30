@@ -23,7 +23,7 @@ def main():
 	print("Broadcasting your output at " + str(freq) + " mHZ!")
 	os.system("sudo ./fm -f " + str(float(freq)) + " output.wav")
 	print("Your output has been compiled and broadcasted.")
-	os.system("sudo rm output.wav")
+	#os.system("sudo rm output.wav")
 	exit()
 
 main()
