@@ -1,12 +1,15 @@
 #Author Timothy Do
 
+import os 
+
 print("****Installing Libraries/Dependencies****\n")
 os.system("sudo pip install gtts")
 os.system("sudo make")
+print("****Finish Installing Dependencies****\n")
 
 from gtts import gTTS
 import wave
-import os 
+
 
 def main():
 	txt = input("Type what the text, it will be speech: ")
