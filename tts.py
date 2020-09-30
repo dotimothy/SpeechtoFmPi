@@ -16,7 +16,7 @@ import wave
 
 def main():
 	txt = raw_input("\nType what the text, it will be speech: ")
-	gt = gTTS(text=txt, lang='en', slow=False)
+	gt = gTTS(txt)
 	gt.save("output.wav")
 	print("Output has been compiled to output.wav.")
 	freq = float(input("Specify the frequency you would like to broadcast: "))
