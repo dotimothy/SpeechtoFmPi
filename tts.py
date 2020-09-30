@@ -7,7 +7,7 @@ import os
 print("****Installing Libraries/Dependencies****\n")
 os.system("sudo pip install gtts")
 os.system("sudo make")
-print("****Finish Installing Dependencies****\n")
+print("\n****Finish Installing Dependencies****\n")
 
 from gtts import gTTS
 import wave
