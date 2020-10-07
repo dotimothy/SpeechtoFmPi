@@ -14,6 +14,7 @@ try:
 	from gtts import gTTS
 except ModuleNotFoundError:
 	os.system("sudo pip install gtts")
+	os.system("sudo pip install soupsieve")
 	print("\nFinished installing gtts\n")
 os.system("sudo make")
 print("\nFinished making executable for fm_transmittewr\n")
