@@ -3,17 +3,22 @@
 import os
 print("****Installing Libraries/Dependencies****\n")
 print()
-os.system("sudo apt-get install ffmpeg")
-print("\nFinished installing ffmpeg\n")
-os.system("sudo pip install pydub")
-print("\nFinished installing pydub\n")
-os.system("sudo pip install gtts")
-print("\nFinished installing gtts\n")
+try:
+	from pydub import AudioSegment
+except ModuleNotFoundError:
+	os.system("sudo apt-get install ffmpeg")
+	print("\nFinished installing ffmpeg\n")
+	os.system("sudo pip install pydub")
+	print("\nFinished installing pydub\n")
+try:
+	from gtts import gTTS
+except ModuleNotFoundError:
+	os.system("sudo pip install gtts")
+	print("\nFinished installing gtts\n")
 os.system("sudo make")
 print("\nFinished making executable for fm_transmittewr\n")
 print("\n****Finish Installing Dependencies****\n")
 
-from gtts import gTTS
 from pydub import AudioSegment
 
 
