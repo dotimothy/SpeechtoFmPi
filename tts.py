@@ -2,7 +2,7 @@
 
 import os
 print("****Installing Libraries/Dependencies****\n")
-os.system("sudo apt-get install sox lixsox-fmt-mp3")
+os.system("sudo apt-get install libsox-fmt-mp3")
 os.system("sudo pip install gtts")
 print()
 os.system("sudo make")
